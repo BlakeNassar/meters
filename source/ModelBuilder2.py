@@ -11,7 +11,7 @@ class ModelBuilder2(DataPreprocessing):
 
         clf = MLPClassifier(solver='lbfgs', alpha=1e-5,hidden_layer_sizes=(5, 2), random_state=1)
         
-        clf.fit(X_train,y_train)
+        clf.fit(X_train)
         
         ann_predicted = clf.predict(X_test)
 
