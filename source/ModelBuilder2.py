@@ -22,3 +22,5 @@ class ModelBuilder2(DataPreprocessing):
         total_accuracy = 1 - error / len(y_test)
 
         self.accuracy = accuracy_score(y_test,ann_predicted)
+
+        return clf
