@@ -9,7 +9,7 @@ class ModelBuilder2(DataPreprocessing):
 
     def ann(self, X_train,X_test,y_train,y_test):
 
-        clf = MLPClassifier(hidden_layer_sizes=(20,2), learning_rate_init=0.01,max_iter= 500)
+        clf = MLPClassifier(hidden_layer_sizes=(20,2), learning_rate_init=0.01,max_iter= 500, random_state= 42)
         
         clf.fit(X_train,y_train)
         
